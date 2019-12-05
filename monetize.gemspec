@@ -19,6 +19,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
+  # ここに依存するGemを書く
+  # Rails という広い括りではなく、必要最低限のGemだけ書く
   spec.add_dependency 'money', '~> 6.12'
 
   spec.add_development_dependency 'bundler'
